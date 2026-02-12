@@ -103,10 +103,11 @@ ai_analysis:
   # - both: 原始内容 + AI分析报告（推荐）
   push_mode: "both"
 
-  # AI 模型配置（基于 LiteLLM）
-  model: "deepseek/deepseek-chat"  # 格式: provider/model
-  api_key: "${AI_API_KEY}"         # 从环境变量读取
-  api_base: ""                      # 留空使用默认，或填自定义API地址
+# AI 模型配置（基于 LiteLLM）
+model: "anthropic/claude-opus-4-6"
+api_key: "sk_9a2c0bf8c3bbd7ed868d8b30d666b8a44abf89a3e069d7d09b0f06014becaf09"
+api_base: ""  # 留空走默认 https://api.anthropic.com :contentReference[oaicite:3]{index=3}
+
 
   # 分析参数
   temperature: 1.0
